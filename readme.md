@@ -51,6 +51,16 @@ You need Java and maven installed.
     mvn spring-boot:run
     open http://localhost:8080
 
+To run the app under PM2 (https://pm2.keymetrics.io/), first install NodeJS then PM2:
+
+    dnf -y module enable nodejs:12
+    dnf -y install nodejs
+    npm install pm2@latest -g
+
+Then launch the app using the provided YAML configuration file:
+
+    pm2 start maven.yml
+
 # Help
 
 Please fork and PR to improve the code.
