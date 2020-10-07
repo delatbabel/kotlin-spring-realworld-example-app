@@ -1,0 +1,8 @@
+apps:
+  - name: realworld-kotlin
+    script: /usr/bin/mvn
+    interpreter: /bin/sh
+    exec_mode: fork
+    instances: 1
+    args:
+      - spring-boot:run
